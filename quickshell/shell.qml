@@ -49,7 +49,7 @@ PanelWindow {
                     property var findws: Hyprland.workspaces?.values.find(w => w.id === idx)
                     property bool isActive: Hyprland.focusedWorkspace?.id === idx
                     color: isActive ? '#dbdb27' : '#d53c3c'
-                    Layout.minimumWidth: isActive && animateSwitching.start ? animateSwitching.start() && 50 : 17
+                    Layout.minimumWidth: isActive ? animateSwitching.start() && 50 : 17
                     height: 17
                     radius: 10
                     
